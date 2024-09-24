@@ -1,7 +1,12 @@
-import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { Link, router } from "expo-router";
+import { Text, View, Button } from "react-native";
 
 export default function Home() {
+
+  function handleNavigate(){
+    router.replace("/dashboard")
+  }
+
   return (
     <View
       style={{
@@ -13,7 +18,7 @@ export default function Home() {
       <Text>Página Home</Text>
       <Link href='/profile'>Ir para profile</Link>
       <Link href='/user/123456'>Ir para usuário</Link>
-      <Link href='/dashboard'>Ir para dashboard</Link>
+      <Button title="Navegar para o painel" onPress={handleNavigate}/>
     </View>
   );
 }
