@@ -10,10 +10,7 @@ export default function Home() {
         alignItems: "center",
       }}
     >
-      <Text>Página Home</Text>
-      <Link href='/profile'>Ir para profile</Link>
-      <Link href='/user/123456'>Ir para usuário</Link>
-      <Link href='/dashboard'>Ir para dashboard</Link>
+      <Text>Página painel</Text>
     </View>
   );
 }
