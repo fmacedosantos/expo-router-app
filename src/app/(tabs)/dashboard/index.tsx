@@ -11,6 +11,7 @@ export default function Dashboard() {
       }}
     >
       <Text>Página painel</Text>
+      <Link href={"/"}>Ir para home</Link>
     </View>
   );
 }
