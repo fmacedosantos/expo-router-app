@@ -15,6 +15,17 @@ export default function Layout() {
             return <FontAwesome name="tag" color={color} size={size}/>
           }
           }}/>
+        <Tabs.Screen name="settings" options={{
+          headerShown: false, 
+          title: "Configurações",
+          tabBarIcon: ({focused, color, size}) => {
+
+            if(focused){
+              return <FontAwesome name="gear" color={color} size={size}/>
+            }
+            return <FontAwesome name="gear" color={color} size={size}/>
+          }
+          }}/>
     </Tabs>
   );
 }
