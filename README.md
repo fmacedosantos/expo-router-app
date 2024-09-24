@@ -47,3 +47,9 @@ Adicione no app.json:
   }
 }
 ```
+
+Copie o conteúdo de App.tsx e apague o arquivo
+
+Crie a pasta src e depois app
+
+Crie o arquivo index.tsx dentro da pasta app e cole o conteúdo
