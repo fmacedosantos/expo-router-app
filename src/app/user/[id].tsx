@@ -1,7 +1,8 @@
-import { Link } from "expo-router";
+import { Link, useLocalSearchParams } from "expo-router";
 import { Text, View } from "react-native";
 
 export default function Home() {
+  const {id} = useLocalSearchParams();
   return (
     <View
       style={{
@@ -10,9 +11,7 @@ export default function Home() {
         alignItems: "center",
       }}
     >
-      <Text>Página Home</Text>
-      <Link href='/profile'>Ir para profile</Link>
-      <Link href='/user/123456'>Ir para usuário</Link>
+      <Text>Página com ID: {id}</Text>
     </View>
   );
 }
